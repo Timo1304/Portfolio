@@ -17,9 +17,10 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
       <p className="text-xl md:text-2xl max-w-2xl text-zinc-300 mb-4">
         {data.punchline}
       </p>
-      <p className="text-base md:text-lg max-w-2xl text-zinc-500 mb-10 border-l-2 border-zinc-700 pl-4">
+      <p className="text-base md:text-lg max-w-2xl text-zinc-500 mb-1 border-l-2 border-zinc-700 pl-4">
         {data.subline}
       </p>
+      <p className="text-base md:text-lg max-w-2xl text-zinc-500 mb-10 border-l-2 border-zinc-700 pl-4">{data.subline1}</p>
       <div className="flex gap-4">
         <a 
           href="#projects" 

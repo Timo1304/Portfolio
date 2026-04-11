@@ -3,9 +3,10 @@ import { PortfolioData } from '../types';
 export const portfolioData: PortfolioData = {
   hero: {
     name: "Timothy",
-    title: "Frontend Engineer",
+    title: "Frontend Engineer/ Technical Support Specialist",
     punchline: "I build production-ready web apps that drive business.",
     subline: "Currently building SteadyLoop (mental health platform, closed beta) using Next.js & TypeScript.",
+    subline1: "Specializing in engineering forensics-diagnosing root causes and securing the product spine through deep debugging and architectural reliability.",
   },
   projects: [
     {
@@ -30,7 +31,8 @@ export const portfolioData: PortfolioData = {
       title: "Workflow Automation",
       pitch: "Containerised automation workflows for business operations.",
       techStack: ["Docker", "n8n", "Zapier"],
-      ctaText: "View Architecture",
+      ctaText: "Request Live Demo",
+      video: "/Workflow_automation.webm",
     }
   ],
   skills: [

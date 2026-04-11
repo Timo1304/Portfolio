@@ -26,6 +26,7 @@ export interface PortfolioData {
     title: string;
     punchline: string;
     subline: string;
+    subline1: string;
   };
   projects: Project[];
   skills: SkillCategory[];
