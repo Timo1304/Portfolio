@@ -8,29 +8,63 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ data }) => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center px-6 md:px-12 lg:px-24">
-      <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+      <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-(--text-primary)">
         {data.name}.
       </h1>
-      <h2 className="text-2xl md:text-4xl text-zinc-400 font-medium mb-6">
+
+      <h2 className="text-2xl md:text-4xl font-medium mb-6 text-(--text-secondary)">
         {data.title}
       </h2>
-      <p className="text-xl md:text-2xl max-w-2xl text-zinc-300 mb-4">
+
+      <p className="text-xl md:text-2xl max-w-2xl mb-4 text-(--text-primary)">
         {data.punchline}
       </p>
-      <p className="text-base md:text-lg max-w-2xl text-zinc-500 mb-1 border-l-2 border-zinc-700 pl-4">
+
+      <p className="
+        text-base md:text-lg max-w-2xl mb-1
+        text-(--text-muted)
+        border-l-2 border-(--border-default) pl-4
+      ">
         {data.subline}
       </p>
-      <p className="text-base md:text-lg max-w-2xl text-zinc-500 mb-10 border-l-2 border-zinc-700 pl-4">{data.subline1}</p>
+
+      <p className="
+        text-base md:text-lg max-w-2xl mb-10
+        text-(--text-muted)
+        border-l-2 border-(--border-default) pl-4
+      ">
+        {data.subline1}
+      </p>
+
       <div className="flex gap-4">
-        <a 
-          href="#projects" 
-          className="bg-white text-zinc-950 px-6 py-3 rounded-md font-semibold hover:bg-zinc-200 transition-colors"
+        {/* Primary CTA — solid accent */}
+        <a
+          href="#projects"
+          className="
+            bg-(--accent-bg)
+            text-(--text-inverse)
+            px-6 py-3 rounded-md font-semibold
+            hover:opacity-85
+            active:scale-[0.98]
+            transition-all duration-200
+          "
         >
           View Work &rarr;
         </a>
-        <a 
-          href="#contact" 
-          className="bg-transparent border border-zinc-700 px-6 py-3 rounded-md font-semibold hover:border-zinc-500 transition-colors"
+
+        {/* Secondary CTA — ghost */}
+        <a
+          href="#contact"
+          className="
+            bg-transparent
+            border border-(--border-default)
+            text-(--text-primary)
+            px-6 py-3 rounded-md font-semibold
+            hover:border-(--border-strong)
+            hover:bg-(--bg-elevated)
+            active:scale-[0.98]
+            transition-all duration-200
+          "
         >
           Contact
         </a>
